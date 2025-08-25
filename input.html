@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Triangle Input</title>
+
+    <link rel="stylesheet" href="input.css">
+
 </head>
+
 <body>
+
+<header>
+    <h1>Enter Coordinates for a Triangle</h1>
+</header>
+
+<main>
+
+    <!--For readability and functionality, declare form element to store input -->
+    <form id="triangleForm">
+        <div class="point">
+            <strong>Point A:</strong>
+            <label for="ax">x:</label>
+            <input type="number" id="ax" name="ax" step="any" required>
+            <label for="ay">y:</label>
+            <input type="number" id="ay" name="ay" step="any" required>
+        </div>
+
+        <div class="point">
+            <strong>Point B:</strong>
+            <label for="bx">x:</label>
+            <input type="number" id="bx" name="bx" step="any" required>
+            <label for="by">y:</label>
+            <input type="number" id="by" name="by" step="any" required>
+        </div>
+
+        <div class="point">
+            <strong>Point C:</strong>
+            <label for="cx">x:</label>
+            <input type="number" id="cx" name="cx" step="any" required>
+            <label for="cy">y:</label>
+            <input type="number" id="cy" name="cy" step="any" required>
+        </div>
+
+        <button type="submit">Draw Triangle</button>
+
+    </form>
+</main>
+
+<script src="input.js"></script>
 
 </body>
 </html>
